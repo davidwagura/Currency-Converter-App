@@ -1,0 +1,48 @@
+<style>
+p {
+  text-align: center;
+}
+h1 {
+  text-align: center;
+  margin-top: 70px;
+  color: blue;
+}
+.amount {
+  margin-top: 85px;
+}
+.Currency {
+  text-align: center;
+  margin-top: -80px;
+
+}
+.convert {
+  text-align: right;
+  margin-top: -80px;
+}
+.main {
+
+
+}
+.button {
+  margin-top: 150px;
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+body {
+  background-color: pink;
+}
+p {
+  font-size: 25px;
+  margin-top: 60px;
+}
+</style>
