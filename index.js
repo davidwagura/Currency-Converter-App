@@ -36,24 +36,24 @@ new Vue ({
         }
       }
       else if(this.currencyFrom === 'TZ') {
-          if(currencyTo === 'KSH'){
+          if(this.currencyTo === 'KSH'){
               this.result = this.amountToConvert * 0.057;
         }
-          if(currencyTo === 'UG'){
+          if(this.currencyTo === 'UG'){
             this.result = this.amountToConvert * 2;
         }
-          if(currencyTo === 'USD'){
+          if(this.currencyTo === 'USD'){
             this.result = this.amountToConvert * 0.00043;
         }
       }
       else if(this.currencyFrom === 'UG') {
-          if(currencyTo === 'KSH'){
+          if(this.currencyTo === 'KSH'){
               this.result = this.amountToConvert * 0.035;
         }
-          if(currencyTo === 'TZ'){
+          if(this.currencyTo === 'TZ'){
             this.result = this.amountToConvert * 0.6;
         }
-          if(currencyTo === 'USD'){
+          if(this.currencyTo === 'USD'){
             this.result = this.amountToConvert * 0.00026;
         }
       }
