@@ -35,7 +35,7 @@ h1 {
   box-shadow: 0 9px #999;
 }
 body {
-  background-image: url("img2.webp");
+  background-color: rgb(80,170,120)
 }
 p {
   font-size: 25px;
