@@ -26,7 +26,7 @@ new Vue ({
       }
       else if(this.currencyFrom === 'KSH') {
           if(this.currencyTo === 'USD'){
-            this.result =  Math.ceil(this.amountToConvert * 0.00076);
+            this.result =  Math.ceil(this.amountToConvert * 0.0075);
         }
           if(this.currencyTo === 'UG'){
             this.result =  Math.ceil(this.amountToConvert * 29);
