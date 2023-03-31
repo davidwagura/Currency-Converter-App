@@ -15,6 +15,6 @@ The technologies that I used in generating this website were:
       - Utilized [Vue.js documentation](https://vuejs.org/guide/introduction.html#what-is-vue)
 
 ##  Live demo
-The website is deployed and running in[gh pages](https://davidwagura.github.io/Vue/)
+The website is deployed and running in[gh pages](https://davidwagura.github.io/Vue/).
 
-Credit to [Felex Kemboi(Software Engineer)](https://github.com/felexkemboi) for the guidance
+Credit to [Felex Kemboi(Software Engineer)](https://github.com/felexkemboi) for the guidance.
