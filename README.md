@@ -1,9 +1,9 @@
-#About the project
+# About the project
 
-##Description
+## Description
 The end goal of creating this website is to help users to easily convert  currencies from different countries.
 
-##Technologies used
+## Technologies used
 The technologies that I used in generating this website were:
 1. HTML and CSS
     I learned these technologies in the following sources:
