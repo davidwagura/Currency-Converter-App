@@ -14,12 +14,12 @@
       <div id="app">
           <div class="amount">
             <h2>Amount</h2>
-            <input type="text" placeholder="amount" v-model="amountToConvert"/>
+            <input type="text" placeholder="amount" style="width: 200px;" v-model="amountToConvert"/>
           </div>
 
           <div class="Currency">
             <h2>Currency</h2>
-            <select v-model="currencyFrom">
+            <select style="width: 200px;" v-model="currencyFrom">
                <option value="KSH">KSH</option>
                <option value="UG">UG</option>
                <option value="USD">USD</option>
@@ -29,7 +29,7 @@
 
           <div class="convert">
             <h2>Convert to</h2>
-            <select v-model="currencyTo">
+            <select style="width: 200px;" v-model="currencyTo">
                <option value="KSH" >KSH</option>
                <option value="UG">UG</option>
                <option value="USD">USD</option>
