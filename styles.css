@@ -19,10 +19,6 @@ h1 {
   text-align: right;
   margin-top: -80px;
 }
-.main {
-
-
-}
 .button {
   margin-top: 150px;
   display: inline-block;
@@ -37,7 +33,6 @@ h1 {
   border: none;
   border-radius: 15px;
   box-shadow: 0 9px #999;
-
 }
 body {
   background-color: pink;
@@ -45,12 +40,6 @@ body {
 p {
   font-size: 25px;
   margin-top: 60px;
-}
-option {
-
-}
-input {
-
 }
 .rate {
   text-align: center;
