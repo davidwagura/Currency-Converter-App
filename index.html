@@ -4,40 +4,48 @@
     <meta charset="utf-8">
     <title>Currenc Converter App</title>
     <link rel="stylesheet" href="./styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.14/dist/vue.js"></script>
   </head>
   <body>
+
     <h1><b>Currency  Converter App</b></h1>
+
     <div id="app">
       <div class="main">
           <div class="amount">
             <h2>Amount</h2>
-             <input type="text" placeholder="amount" value="">
+            <input type="text" placeholder="amount" v-model="amountToConvert"/>
           </div>
 
           <div class="Currency">
             <h2>Currency</h2>
-            <select>
-               <option value="text">KSH</option>
-               <option value="text">UG</option>
-               <option value="text">USD</option>
-               <option value="text">TZ</option>
-            </select
-
-          </div>
-          <div class="convert">
-            <h2>Convert to</h2>
-            <select>
-               <option value="text">KSH</option>
-               <option value="text">UG</option>
-               <option value="text">USD</option>
-               <option value="text">TZ</option>
+            <select v-model="currencyFrom">
+               <option value="KSH">KSH</option>
+               <option value="UG">UG</option>
+               <option value="USD">USD</option>
+               <option value="TZ">TZ</option>
             </select>
           </div>
+
+          <div class="convert">
+            <h2>Convert to</h2>
+            <select v-model="currencyTo">
+               <option value="KSH" >KSH</option>
+               <option value="UG">UG</option>
+               <option value="USD">USD</option>
+               <option value="TZ">TZ</option>
+            </select>
+          </div>
+
           <div class="button">
             <button @click="convert">Convert</button>
-         </div>
-         <p>Rate: 2 USD is equal to 250 KSH </p>
+          </div>
+
+          <div class="rate" v-if="showResults">Rate: {{ amountToConvert }} {{ currencyFrom}} is equal to{{ currencyTo }} {{ result }} </div>
+
        </div>
     </div>
+    <script type="text/javascript" src="./index.js"></script>
+
   </body>
 </html>
