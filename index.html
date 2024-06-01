@@ -2,50 +2,46 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Currenc Converter App</title>
+    <title>Currency Converter App</title>
     <link rel="stylesheet" href="./styles.css">
     <script src="https://cdn.jsdelivr.net/npm/vue@2.7.14/dist/vue.js"></script>
   </head>
   <body>
+    <div class="container">
+      <h1>Currency Converter App</h1>
+      <div id="app" class="converter-form">
+        <div class="form-group">
+          <h2>Amount</h2>
+          <input type="text" placeholder="Enter amount" v-model="amountToConvert"/>
+        </div>
 
-    <h1><b>Currency  Converter App</b></h1>
+        <div class="form-group">
+          <h2>From Currency</h2>
+          <select v-model="currencyFrom">
+            <option value="KSH">KSH</option>
+            <option value="UG">UG</option>
+            <option value="USD">USD</option>
+            <option value="TZ">TZ</option>
+          </select>
+        </div>
 
-    <div class="main">
-      <div id="app">
-          <div class="amount">
-            <h2>Amount</h2>
-            <input type="text" placeholder="amount" style="width: 200px;" v-model="amountToConvert"/>
-          </div>
+        <div class="form-group">
+          <h2>To Currency</h2>
+          <select v-model="currencyTo">
+            <option value="KSH">KSH</option>
+            <option value="UG">UG</option>
+            <option value="USD">USD</option>
+            <option value="TZ">TZ</option>
+          </select>
+        </div>
 
-          <div class="Currency">
-            <h2>Currency</h2>
-            <select style="width: 200px;" v-model="currencyFrom">
-               <option value="KSH">KSH</option>
-               <option value="UG">UG</option>
-               <option value="USD">USD</option>
-               <option value="TZ">TZ</option>
-            </select>
-          </div>
+        <div class="form-group">
+          <button @click="convert">Convert</button>
+        </div>
 
-          <div class="convert">
-            <h2>Convert to</h2>
-            <select style="width: 200px;" v-model="currencyTo">
-               <option value="KSH" >KSH</option>
-               <option value="UG">UG</option>
-               <option value="USD">USD</option>
-               <option value="TZ">TZ</option>
-            </select>
-          </div>
-
-          <div class="button">
-            <button @click="convert">Convert</button>
-          </div>
-
-          <div class="rate" v-if="showResults">Rate: {{ amountToConvert }} {{ currencyFrom }} is equal to {{ currencyTo }} {{ result }} </div>
-
-       </div>
+        <div class="rate" v-if="showResults">Rate: {{ amountToConvert }} {{ currencyFrom }} is equal to {{ result }} {{ currencyTo }}</div>
+      </div>
     </div>
     <script type="text/javascript" src="./index.js"></script>
-
   </body>
 </html>
